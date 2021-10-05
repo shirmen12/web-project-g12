@@ -1,0 +1,446 @@
+* {
+  border: solid 0px rgb(0, 0, 0);
+}
+
+@font-face {
+  font-family: titleFont;
+  src: url(horevclm-heavy-webfont.ttf);  
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #f6f5f5;
+  color: #145374;
+  font-family: titleFont;
+}
+
+.formcontainer {
+  width: 50em;
+  height: 30em;
+  display: block;
+  margin: auto;
+  margin-top: 3.5em;
+  margin-bottom: 5em;
+  border-radius: 12px;
+  border: solid 1px rgba(20, 83, 116, 0.2);
+  overflow: hidden;
+  background-color: #f6f5f5;
+  box-shadow: 2px 2px 15px rgba(20, 83, 116, 0.2);
+}
+
+.container2 {
+  width: 50em;
+  height: 34em;
+  display: block;
+  margin: auto;
+  margin-top: 3.5em;
+  margin-bottom: 5em;
+  border-radius: 12px;
+  border: solid 1px rgba(20, 83, 116, 0.2);
+  overflow: hidden;
+  background-color: #f6f5f5;
+  box-shadow: 2px 2px 15px rgba(20, 83, 116, 0.2);
+}
+
+.container-Sign{
+  width: 50em;
+  height: 34em;
+  display: block;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  border-radius: 12px;
+  border: solid 1px rgba(20, 83, 116, 0.2);
+  overflow: hidden;
+  background-color: #f6f5f5;
+  box-shadow: 2px 2px 15px rgba(20, 83, 116, 0.2);
+}
+.page {
+  display: block;
+  width: 50%;
+  height: 34em;
+  margin: 0;
+  float: left;
+  background-color: #9e9b95;
+  text-align: center;
+  background-image: url("sign_in_pic.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.page-Sign {
+  display: block;
+  width: 50%;
+  height: 34em;
+  margin: 0;
+  float: left;
+  background-color: #9e9b95;
+  text-align: center;
+  background-image: url("sign_in_pic.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.login_page {
+  display: block;
+  width: 50%;
+  height: 34em;
+  margin: 0;
+  float: left;
+  background-color: #9e9b95;
+  text-align: center;
+  background-image: url("log_in_picture.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.page h1 {
+  font-size: 3em;
+  font-weight: 400;
+  margin-top: 2em;
+  margin-bottom: 0.2em;
+  color: #f0ede9;
+}
+.page p {
+  font-size: 0.6em;
+  width: 60%;
+  margin: auto;
+  color: #f6f5f5;
+}
+
+.searchTerm{
+    text-align: right;
+}
+
+.form {
+  display: inline-block;
+  width: 50%;
+  height: 25em;
+  margin: 0;
+  background-color: #f6f5f5;
+  text-align: center;
+  font-family:Rubik,BlinkMacSystemFont,-apple-system,Segoe\ UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira\ Sans,Droid\ Sans,Helvetica\ Neue,Helvetica,Arial,sans-serif;
+}
+.form input {
+  display: block;
+  margin: auto;
+  margin-bottom: 1em;
+  width: 15em;
+  height: 2.1em;
+  border: solid 1px rgba(20, 83, 116, 0.1);
+  transition: all 0.1s;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-family:Rubik,BlinkMacSystemFont,-apple-system,Segoe\ UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira\ Sans,Droid\ Sans,Helvetica\ Neue,Helvetica,Arial,sans-serif;
+}
+textarea{
+  resize: none;
+  display: block;
+  margin: auto;
+  margin-bottom: 1em;
+  width: 15em;
+  border: solid 1px rgba(20, 83, 116, 0.1);
+  transition: all 0.1s;
+  text-align: right;
+  font-family:Rubik,BlinkMacSystemFont,-apple-system,Segoe\ UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira\ Sans,Droid\ Sans,Helvetica\ Neue,Helvetica,Arial,sans-serif;
+}
+
+textarea::placeholder {
+  float: right;
+}
+.textarea:hover {
+  border: solid 1px #145374;
+}
+.textarea input:focus {
+  color: #145374;
+  font-weight: 600;
+  border: solid 1px #145374;
+}
+.form input:hover {
+  border: solid 1px #145374;
+}
+.form input:focus {
+  color: #145374;
+  font-weight: 600;
+  border: solid 1px #145374;
+}
+.form .searchTerm:focus {
+  outline: none;
+  letter-spacing: 1px;
+}
+.form h2 {
+  color: #145374;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.form .sns {
+  border: solid 0px;
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+.form .button button{
+  margin: auto;
+  width: 8em;
+  height: 2.5em;
+}
+.form .button button {
+  height: auto;
+  border: solid 1.5px #145374;
+  border-radius: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #145374;
+  margin: 0;
+}
+.form .button button:hover {
+  border: solid 2px #ee6f57;
+  color: #ee6f57;
+  font-weight: 600;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: inherit;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: #145374;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+
+nav{
+  direction: rtl;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
+
+nav ul li{
+  margin-left:5px;
+  text-align: center;
+}
+
+
+nav ul li a{
+  color: black;
+  padding: 8px;
+  font-size: 30px;
+  border: none;
+}
+
+nav ul li a:active{
+  color: indianred;
+}
+
+#homePage{
+  background-color: #e0482d;
+  color: black;
+  padding: 8px;
+  font-size: 30px;
+  border: none;
+  border-radius: 6px;
+  border: 2px #000 solid;
+}
+
+nav ul ul {
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 0;
+  display: none;
+  padding: 0%;
+  z-index: 1;
+  }
+
+.dropDown{
+  background-color: white;
+}
+  
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block; 
+  min-width: 130px;
+  border-radius: 5px;
+}
+  
+ul li ul li {
+  clear: both;
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  
+}
+
+ul li:hover{
+    background-color: rgb(250, 244, 244);
+    border-radius: 10px;
+    border: 2px #000 solid;
+}
+
+  ul li ul li:hover{
+    background-color: rgb(250, 244, 244);
+  }
+
+  ul li ul li a{
+    text-align: right;
+    margin: 2px;
+    padding-left: 7px;
+    font-size: 20px;
+  }
+
+  ul li ul li a:hover{
+    color: #212329;
+  }
+
+
+  .columns {
+    color: rgb(131, 139, 131);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 1;
+    margin: 1;
+    list-style: none;
+  }
+  
+  .column {
+    color: rgb(131, 139, 131);
+  }
+  
+  #navbar{
+    background-color: var(--orange);
+    background-repeat: no-repeat;
+    height: 54px;
+    z-index: 2;
+  }
+  .navbar-row {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7bf50;
+    background-repeat: no-repeat;
+    height: 54px;
+  }
+
+  .form h2{
+    font-size: 40px;
+  }
+
+  .form .button button{
+    padding-block-start: 10px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+  }
+
+  footer {
+    background-color: #212329;
+    font-size: 1.3rem;
+    text-align: right;
+    direction: ltr;
+  }
+  
+  footer p a{
+    color: rgb(131, 139, 131);
+  }
+  
+  
+  
+  .columns {
+    color: rgb(131, 139, 131);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 1;
+    margin: 1;
+    list-style: none;
+  }
+  
+  .column {
+    color: rgb(131, 139, 131);
+  }
+  .Delbutton{
+    padding-block-start: 10px;
+    font-size: 28px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+  }
+
+  .form .Delbutton {
+      display: block;
+      width: inherit;
+      height: auto;
+      border: solid 1.5px #145374;
+      border-radius: 20px;
+      line-height: 1.8em;
+      font-size: 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #145374;
+      margin: 37px;
+      margin-left: 165px;
+      padding: 9px;
+  }
+
+  .form .Delbutton:hover{
+    border: solid 2px #ee6f57;
+    color: #ee6f57;
+    font-weight: 600;
+  }

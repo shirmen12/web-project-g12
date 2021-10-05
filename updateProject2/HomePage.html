@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' media='screen' href="HomePage.css">
+    <script src="HomePage.js"></script>
+    <title>Home Page</title>
+</head>
+<body onscroll="scrollingNavBar()">
+    <header>
+        <div id="DOGGERS">
+        <img src = "./logo.png">
+        </div>
+    </header>
+    <nav id="navbar">
+        <ul class="navbar-row">
+            <div class="row-right-side">
+                <li><a id="homePage" href="HomePage.html"><strong>דף הבית</strong></a></li>
+                <li><a href="#"><strong>שירותים</strong></a>
+                    <ul>
+                        <li><a href="#"><strong>אילוף אישי</strong></a></li>
+                        <li><a href="#"><strong>אילוף בקבוצות</strong></a></li>
+                        <li><a href="#"><strong>ספרים לכלבים</strong></a></li>
+                        <li><a href="#"><strong>אג'יליטי</strong></a></li>
+                        <li><a href="#"><strong>דוג ווקרים</strong></a></li>
+                        <li><a href="#"><strong>דוג סיטרים</strong></a></li>
+                        <li><a href="#"><strong>פנסיונים</strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><strong>תמיכה ומידע</strong></a>
+                    <ul>
+                        <li><a href="#"><strong>מי אנחנו</strong></a></li>
+                        <li><a href="#"><strong>שאלות ותשובות</strong></a></li>
+                        <li><a href="#"><strong>צור קשר</strong></a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="row-left-side">
+                <li><a href="sign_up_form_web_project_g12.html"><strong>הוסף פרופיל</strong></a></li>
+                <li><a href="log_in_form_web_project_g12.html"><strong>התחבר</strong></a></li>
+            </div>
+        </ul>
+    </nav>
+    
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./runingDog.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="eric-ward-ISg37AI2A-s-unsplash.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="jamie-street-wcO2PWLuQ3U-unsplash.jpeg" style="width:100%">
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+        </script>
+    <!-- <div id="slider">
+        <div class="images">
+          <img src="./runingDog.jpeg" alt="img-err" class="search-img"/>
+          <img src="eric-ward-ISg37AI2A-s-unsplash.jpg" class="search-img">
+          <img src="jamie-street-wcO2PWLuQ3U-unsplash.jpg" class="search-img">
+          <img src="pauline-loroy-U3aF7hgUSrk-unsplash.jpg" class="search-img">
+        </div>
+  </div> -->
+    <!-- <div id = "slider">
+        <img src="./runingDog.jpeg" alt="img-err" class="search-img"/>
+    </div> -->
+    
+    <div id = "About" class="content">
+        <h1>DOGGERS - קהילת מטפלי הכלבים הגדולה בישראל</h1>
+        <h3><br>אתר "דוגרס" הוקם ע"י בעלי כלבים על מנת לענות על הפער הקיים במציאת טיפול מתאים לכלב שלהם באינטרנט.
+            <br>כיום, האתר הינו פלטפורמת מודעות מטפלי הכלבים הגדולה בישראל.
+            <br>האתר מציע כל מה שכלבך ואתה צריכים החל מ: דוג-ווקינג, פנסיונים,אילופים ביחידים או בקבוצות ואפילו תספורת לקראת ימי קיץ חמים.<br><br>
+           :) נשמח לקבל תגובות ,הצעות לשיפור ותחומי עיסוק חדשים
+        </h3>
+    </div>
+
+    <div id="recomendations" class="content">
+        <h1 class="titles">ההמלצות החמות של האתר</h1>
+        <div  id = "recomend-container" >
+            <div class = recomend>
+                <div class = "upPart">
+                    <div class="innerGap"><img src="./recomend1.png" alt="img-err" class="recomends-img"/></div>
+                    <div class="innerGap">ממליצה - מאיה דגן <br><br><br><br><br> פרופיל - אתי אלון</div>
+                    <div id="date" class="innerGap">08/09/21</div>
+                </div>
+                <div class = "downPart">
+                    "שירות מדהים !! העבירה לנו 5 סשנים של אילופים<br> בהם הכלבה למדה המון"
+                </div>
+            </div>
+            <div class = recomend>
+                <div class = "upPart">
+                    <div class="innerGap"><img src="./recomend2.png" alt="img-err" class="recomends-img"/></div>
+                    <div class="innerGap">ממליצה - אליהו הנביא <br><br><br><br><br> פרופיל - סתיו עמר</div>
+                    <div id="date" class="innerGap">06/09/21</div>
+                </div>
+                <div class = "downPart">
+                    "פשוט תענוג עובד בשעות נוחות והכלב תמיד מרוצה"
+                </div>
+            </div>
+            <div class = recomend>
+                <div class = "upPart">
+                    <div class="innerGap"><img src="./recomend3.png" alt="img-err" class="recomends-img"/></div>
+                    <div class="innerGap">ממליצה - שמשון אבו <br><br><br><br><br> פרופיל - מוטי לוחים</div>
+                    <div id="date" class="innerGap">05/09/21</div>
+                </div>
+                <div class = "downPart">
+                    "ספר הכלבים הכי טוב שעבדתי איתו, ממש הלוחש לכלבים"
+                </div>
+            </div>
+          
+        </div>
+    </div>
+    <div class="content" id="geo_location">
+        <h1 class="titles">בקרבתך</h1>
+        <div class="profile_container">
+            <div class = "profile_content">
+                <div class="profile">
+                    <span></span>
+                    <div>
+                        <img class="profile_pic"
+                            src="profile.png">
+                    </div>
+                    <div>
+                        <h3>
+                            <a href='#'>
+                                <span>ג'וסלין אלבז</span>
+                            </a>
+                            </h3>
+                            <div>
+                                <div>
+                                    <span>
+                                        <span>20</span>
+                                        <span> ביקורות</span>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>
+                                            <span>₪</span>
+                                            100</span>
+                                        </span>
+                                        <span>לשעה</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                    </div>
+                    <div><span>”</span>אמריקאית ישראלית,
+                        מאלפת כלבים טיפוליים מזה 15 שנה.
+                        <span>“</span>
+                    </div>
+                    <div class="phone">מס טלפון : 0523851345</div>
+                </div>
+            </div>
+            <div class = "profile_content">
+                <div class="profile">
+                    <span></span>
+                    <div>
+                        <img class="profile_pic"
+                            src="profile.png">
+                    </div>
+                    <div>
+                        <h3>
+                            <a href='#'>
+                                <span>ג'וסלין אלבז</span>
+                            </a>
+                            </h3>
+                            <div>
+                                <div>
+                                    <span>
+                                        <span>20</span>
+                                        <span> ביקורות</span>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>
+                                            <span>₪</span>
+                                            100</span>
+                                        </span>
+                                        <span>לשעה</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                    </div>
+                    <div><span>”</span>אמריקאית ישראלית,
+                        מאלפת כלבים טיפוליים מזה 15 שנה.
+                        <span>“</span>
+                    </div>
+                    <div class="phone">מס טלפון : 0523851345</div>
+                </div>
+            </div>
+            <div class = "profile_content">
+                <div class="profile">
+                    <span></span>
+                    <div>
+                        <img class="profile_pic"
+                            src="profile.png">
+                    </div>
+                    <div>
+                        <h3>
+                            <a href='#'>
+                                <span>ג'וסלין אלבז</span>
+                            </a>
+                            </h3>
+                            <div>
+                                <div>
+                                    <span>
+                                        <span>20</span>
+                                        <span> ביקורות</span>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>
+                                            <span>₪</span>
+                                            100</span>
+                                        </span>
+                                        <span>לשעה</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                    </div>
+                    <div><span>”</span>אמריקאית ישראלית,
+                        מאלפת כלבים טיפוליים מזה 15 שנה.
+                        <span>“</span>
+                    </div>
+                    <div class="phone">מס טלפון : 0523851345</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class = "footer">
+        <div class = "container">
+            <div class = "columns">
+                <div class = "column">
+                    <p>©2021 DOGGERS כל הזכויות שמורות לאתר <br>אין להעתיק או לעשות שימוש בכל חלק מהאתר</a></p>
+                </div>
+                <div class = "column">
+                    <p><a href="#"  style="text-decoration: none" title="תמיכה ומידע">תמיכה ומידע</a></p>
+                    <p><a href="#"  style="text-decoration: none" title="צור קשר">צור קשר</a></p>
+                </div>
+                <div class = "column">
+                    <p><a href="./sign_up_form_web_project_g12.html" style="text-decoration: none" title="הוספת פרופיל מורה">הוספת פרופיל</a></p>
+                    <p><a href="./log_in_form_web_project_g12.html" style="text-decoration: none" title="התחברות">התחבר </a></p>
+                </div>
+            </div>
+        </div>
+        
+    </footer> 
+
+</body>
+
+
+
+</html>

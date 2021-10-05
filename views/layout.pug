@@ -1,0 +1,82 @@
+html
+  block head
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' type='text/css' media='screen' href='HomePage.css')
+    title Home Page
+    script(src='HomePage.js')
+    block extrahead 
+  body(onscroll='scrollingNavBar()')
+    block indexheader
+    nav#navbar
+      ul.navbar-row
+        .row-right-side
+          li
+            a#homePage(href="/")
+              strong דף הבית
+          li
+            a(href='#')
+              strong שירותים
+            ul
+              li
+                a(href='/personalTraining')
+                  strong אילוף אישי
+              li
+                a(href='/groupTraining')
+                  strong אילוף בקבוצות
+              li
+                a(href='/dogBarbers')
+                  strong ספרים לכלבים
+              li
+                a(href='aguility')
+                  strong אג'יליטי
+              li
+                a(href='dogWalkers')
+                  strong דוג ווקרים
+              li
+                a(href='/dogSitters')
+                  strong דוג סיטרים
+              li
+                a(href='/pensions')
+                  strong פנסיונים
+          li
+            a(href='#')
+              strong תמיכה ומידע
+            ul
+              li
+                a(href='/about_us.html')
+                  strong מי אנחנו
+              li
+                a(href='/disengagement')
+                  strong הסרת משתמש
+              li
+                a(href='/contact_us')
+                  strong צור קשר
+        .row-left-side
+          li
+            a(href= '/sign_up_form')
+              strong הוסף פרופיל
+          li
+            a(href= log_path)
+              strong #{log_var}
+    block content         
+    footer.footer
+      .container
+        .columns
+          .column
+            p ©2021 DOGGERS כל הזכויות שמורות לאתר 
+              br
+              | אין להעתיק או לעשות שימוש בכל חלק מהאתר
+          .column
+            p
+              a(href='#' style='text-decoration: none' title='תמיכה ומידע') תמיכה ומידע
+            p
+              a(href='/contact_us' style='text-decoration: none' title='צור קשר') צור קשר
+          .column
+            p
+              a(href='/' style='text-decoration: none' title='דף הבית') דף הבית
+            p
+              a(href= profile_path style='text-decoration: none' title='הוספת פרופיל') הוספת פרופיל
+            p
+              a(href= log_path style='text-decoration: none' title='התחברות') #{log_var} 
+    block script 

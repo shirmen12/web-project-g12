@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(horevclm-heavy-webfont.ttf);  
+}
+
+div{
+    display: block;
+}
+
+#title h1{
+    font-size: 300%;
+    font-family: titleFont;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: titleFont;
+    direction: rtl;
+}
+
+.header{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    display: flex;
+    height: 71px;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 50px;
+}
+
+#title {
+    margin-top: 10px;
+}
+.logo a {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.logo img {
+    max-height: 50px;
+    margin-top: 20px;
+    vertical-align: middle;
+}
+img {
+    border-style: none;
+}
+
+.nav{
+    display: flex;
+}
+
+nav ul {
+	margin-left:5px;
+	text-align: center;
+}
+
+
+nav ul a{
+	color: rgb(175, 161, 144);
+	padding: 12px;
+	font-size: 22px;
+	border: none;
+}
+
+nav ul a:active{
+	color: indianred;
+}
+
+#search {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 360px;
+	width: auto;
+	text-align: center;
+}
+.search-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-block-start: 5px;
+    width: 95%;
+    height: 112%;
+    top: 0;
+    right: 28px;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 10px;
+}
+.form {
+	width: 90%;
+    display: flex;
+}
+
+/* Style the search field */
+form.form input[type='text'] {
+	padding: 7px;
+	font-size: 15px;
+	border: 1px solid grey;
+	width: 80%;
+	background: #f1f1f1;
+	text-align: right;
+	outline: none;
+	border-radius: 30px;
+	border: 1.5px #000 solid;
+}
+
+/* Style the submit button */
+form.form button {
+	width: 20%;
+	padding: 10px;
+	background: #ab9b8e;
+	color: white;
+	font-size: 17px;
+	border: 1px solid grey;
+	border-left: none; /* Prevent double borders */
+	cursor: pointer;
+	border-radius: 30px;
+	border: 1.5px #000 solid;
+
+}
+
+form.form button:hover {
+	background: grey;
+}
+
+form.form::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+
+
+

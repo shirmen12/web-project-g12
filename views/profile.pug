@@ -1,0 +1,99 @@
+extends layout
+block extrahead 
+    link(rel='stylesheet' href='profile.css')
+    title פרופיל אישי
+block content
+    #profile.content
+      h1#User_Name  פרופיל משתמש - נותן שירות 
+      .welcome
+        .innerWelcome
+          img.profilePic(src='./profile.png' alt='')
+          .about
+            h1 עומר דהן
+            h4 מעביר שיעורי אילוף ביחידים או בקבוצות. 
+              br
+              | מתמחה בשיטת תגמול. בעל וותק של 4 שנים
+              br
+              br
+              | בן 27, מבאר שבע
+        #payment
+          button#messege שלח הודעה
+          h2#price 90₪ לשעה - בקבוצה
+            br
+            br
+            | 120₪ לשעה - ביחיד
+          div#send_mess
+            // Modal content
+            .opinion-content
+              span.close &times;
+              h1 צור קשר
+              #connect
+                form.form#lesson_req
+                  input(placeholder='שם מלא' type='text')
+                  input(placeholder='דואר אלקטרוני' type='email')
+                  input(placeholder='מס טלפון' type='tel')
+                  textarea(rows='4' cols='50' form='lesson_req' placeholder='סיבת הפנייה')
+      #aboutMe.content
+        h2 קצת עליי
+        p
+          | סטודנט שנה ג להנדסת תעשייה וניהול.
+          | השיעור מועבר פרטנית או בקבוצה קטנה.
+          | כלל השיעורים מותאמים לכל כלב ולקצב הפרטי שלו.
+          | בעל ניסיון באילוף מזה 4 שנים, בוגר מרכז אופק . בעל תשומת לב וסבלנות רבה
+          | בסוף כל שיעור מוסיף תרגילים לתרגול אישי
+      #knowledge
+        h3 סגנונות
+        p כלבנות טיפולית, כלבי הגנה, כלבי עבודה וגישוש
+      #cities
+        h3 ערי עיסוק
+        p באר שבע, אשדוד
+      #opinion
+        h3 חוות דעת
+        // כאן יהיה פירוט של חוות דעת שהועלו לאתר
+        button#addOP הוספת חוות דעת
+        .opinion#opinion_set
+          // Modal content
+          .opinion-content
+            span.close &times;
+            h1 דרג את עומר
+            #request
+              form#rate.form(action='http://localhost:5000/profile' method='POST')
+                input(name= 'rate' placeholder='ציון בין 1-5' type='value')
+                textarea(name= 'content' rows='4' cols='50' form='rate' placeholder='התייחסות מילולית')
+                input(name= 'service_type' list='browsers' placeholder='סוג השיעור שהועבר' type='text')
+                datalist#browsers
+                  option(value='אילוף')
+                    option(value='תספורת כלבים')
+                      option(value='אגיליטי')
+                        option(value='דוג ווקר')
+                          option(value='דוג סיטר')
+                            option(value='פנסיון')
+                input(name='sessions' placeholder='מס השיעורים/מפגשים' type='value')
+                button(type='submit') שלח
+    script(type='text/javascript').
+          var opinion1 = document.getElementById('opinion_set');
+          var opinion = document.getElementById('opinion_set');
+          var messege = document.getElementById('send_mess');
+          var btn1 = document.getElementById('addOP');
+          var btn2 = document.getElementById('messege');
+          var span = document.getElementsByClassName('close')[0];
+          
+          btn1.onclick = function () {
+            opinion.style.display = "block";
+          }
+          btn2.onclick = function () {
+            messege.style.display = "block";
+          }
+          
+          span.onclick = function () {
+            opinion.style.display = "none";
+            messege.style.display = "none";
+          }
+          window.onclick = function (event) {
+            if (event.target == opinion) {
+              opinion.style.display = 'none';
+            }
+            if (event.target == messege) {
+              messege.style.display = 'none';
+            }
+          }

@@ -1,0 +1,19 @@
+extends layout
+block head 
+    title Registration Form
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' type='text/css' media='screen' href='forms_design.css')
+    script(src='tabs_forms.js')
+block content
+    .formcontainer
+        .login_page
+        .form
+            h2
+                | התחברות
+            br
+            br
+            form(action='http://localhost:5000/log_in_form' method='POST')
+                input.searchTerm(type='email' name='email' placeholder='אימייל')
+                input.searchTerm(type='password' name='password' placeholder='סיסמה')
+                .button
+                    button(type='submit') התחבר

@@ -1,0 +1,95 @@
+extends layout
+block indexheader
+    #DOGGERS
+        img(src='./logo.png') 
+block content
+    .slideshow-container
+      .mySlides.fade
+        .numbertext 1 / 3
+        img(src='./runingDog.jpeg' style='width:100%')
+      .mySlides.fade
+        .numbertext 2 / 3
+        img(src='eric-ward-ISg37AI2A-s-unsplash.jpeg' style='width:100%')
+      .mySlides.fade
+        .numbertext 3 / 3
+        img(src='jamie-street-wcO2PWLuQ3U-unsplash.jpeg' style='width:100%')
+    br
+    div(style='text-align:center')
+      span.dot
+      span.dot
+      span.dot
+    script.
+      var slideIndex = 0;
+      showSlides();
+    //
+      <div id="slider">
+      <div class="images">
+      <img src="./runingDog.jpeg" alt="img-err" class="search-img"/>
+      <img src="eric-ward-ISg37AI2A-s-unsplash.jpg" class="search-img">
+      <img src="jamie-street-wcO2PWLuQ3U-unsplash.jpg" class="search-img">
+      <img src="pauline-loroy-U3aF7hgUSrk-unsplash.jpg" class="search-img">
+      </div>
+      </div>
+    //
+      <div id = "slider">
+      <img src="./runingDog.jpeg" alt="img-err" class="search-img"/>
+      </div>
+    #About.content
+      h1 DOGGERS - קהילת מטפלי הכלבים הגדולה בישראל
+      h3
+        br
+        | אתר "דוגרס" הוקם ע"י בעלי כלבים על מנת לענות על הפער הקיים במציאת טיפול מתאים לכלב שלהם באינטרנט.
+        br
+        | כיום, האתר הינו פלטפורמת מודעות מטפלי הכלבים הגדולה בישראל.
+        br
+        | האתר מציע כל מה שכלבך ואתה צריכים החל מ: דוג-ווקינג, פנסיונים,אילופים ביחידים או בקבוצות ואפילו תספורת לקראת ימי קיץ חמים.
+        br
+        br
+        | :) נשמח לקבל תגובות ,הצעות לשיפור ותחומי עיסוק חדשים
+    #recomendations.content
+      h1.titles ההמלצות החמות של האתר
+      #recomend-container
+        .recomend
+          .upPart
+            .innerGap
+              img.recomends-img(src='./recomend1.png' alt='img-err')
+            .innerGap #{cemail_opinion1}
+              br
+              br
+              br
+              br
+              br
+              | #{stars_opinion1}
+            #date.innerGap 
+          .downPart
+            | #{content_opinion1}
+            br
+            | 
+        .recomend
+          .upPart
+            .innerGap
+              img.recomends-img(src='./recomend2.png' alt='img-err')
+            .innerGap #{cemail_opinion2}
+              br
+              br
+              br
+              br
+              br
+              | #{stars_opinion2}
+            #date.innerGap
+          .downPart
+            | #{content_opinion2}
+        .recomend
+          .upPart
+            .innerGap
+              img.recomends-img(src='./recomend3.png' alt='img-err')
+            .innerGap #{cemail_opinion3}
+              br
+              br
+              br
+              br
+              br
+              | #{stars_opinion3}
+            #date.innerGap 
+          .downPart
+            | #{content_opinion3}

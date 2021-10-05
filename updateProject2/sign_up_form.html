@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='forms_design.css'>
+    <script src="tabs_forms.js"></script>
+</head>
+<body onload="onloadType(event, 'Provider')">
+    <nav id="navbar">
+        <ul class="navbar-row">
+            <div class="row-right-side">
+                <li><a id="homePage" href="http://localhost:5000/"><strong>דף הבית</strong></a></li>
+                <li><a href="#"><strong>שירותים</strong></a>
+                    <ul>
+                        <li><a href="http://localhost:5000/personalTraining"><strong>אילוף אישי</strong></a></li>
+                        <li><a href="http://localhost:5000/groupTraining"><strong>אילוף בקבוצות</strong></a></li>
+                        <li><a href="http://localhost:5000/dogBarbers"><strong>ספרים לכלבים</strong></a></li>
+                        <li><a href="http://localhost:5000/aguility"><strong>אג'יליטי</strong></a></li>
+                        <li><a href="http://localhost:5000/dogWalkers"><strong>דוג ווקרים</strong></a></li>
+                        <li><a href="http://localhost:5000/dogSitters"><strong>דוג סיטרים</strong></a></li>
+                        <li><a href="http://localhost:5000/pensions"><strong>פנסיונים</strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><strong>תמיכה ומידע</strong></a>
+                    <ul>
+                        <li><a href="http://localhost:5000/about_us.html"><strong>מי אנחנו</strong></a></li>
+                        <li><a href="http://localhost:5000/disengagement"><strong>הסרת משתמש</strong></a></li>
+                        <li><a href="http://localhost:5000/contact_us"><strong>צור קשר</strong></a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="row-left-side">
+                <li><a href="http://localhost:5000/sign_up_form.html"><strong>הוסף פרופיל</strong></a></li>
+                <li><a href="http://localhost:5000/log_in"><strong>התחבר</strong></a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="container-Sign">
+        <div class="page-Sign">
+        </div>
+        <div class="form">
+            <h2 id="signLine">
+                צור חשבון
+            </h2>
+            <p></p>
+            <div class="tab">
+                <button class="tablinks" onclick="openType(event, 'Customer')" >נותן שירות</button>
+                <button class="tablinks" onclick="openType(event, 'Provider')" id="deaultTab">מקבל שירות</button>
+            </div>
+            <div id="Provider" class="tabcontent">
+                <form action="http://localhost:5000/sign_up_form" method="POST">
+                    <input type="hidden" name="customer" value="true">
+                    <input type="text" name="username" class="searchTerm" placeholder="שם משתמש"/>
+                    <input type="email" name="email" class="searchTerm" placeholder="דואר אלקטרוני"/>
+                    <input type="password" name="password" class="searchTerm" placeholder="סיסמה"/>
+                    <input type="text" name="city" class="searchTerm" placeholder="עיר מגורים"/>
+                    <div class="button">
+                        <button type="submit">הירשם</a>
+                    </div>
+                </form>
+            </div>
+            <div id="Customer" class="tabcontent">
+                <form id ="signIn" action="http://localhost:5000/sign_up_form" method="POST">
+                    <input type="hidden" name="customer" value="false">
+                    <input type="text" name="username" class="searchTerm" placeholder="שם משתמש" />
+                    <input type="email" name="email" class="searchTerm" placeholder="דואר אלקטרוני" />
+                    <input type="password" name="password" class="searchTerm" placeholder="סיסמה" />
+                    <input type="text" name="city" class="searchTerm" placeholder="עיר מגורים" />
+                    <input type="text" name="service_type" class="searchTerm" placeholder="סוג שירות" />
+                    <input type="text" name="fee" class="searchTerm" placeholder="עלות לשעה/פגישה" />
+                    <textarea name="about" rows="4" cols="60" form="signIn" placeholder="בקצרה עלייך"></textarea>
+                    <div class="button">
+                        <button type="submit">הירשם</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container1">
+            <div class="columns">
+                <div class="column">
+                    <p>©2021 DOGGERS כל הזכויות שמורות לאתר <br>אין להעתיק או לעשות שימוש בכל חלק מהאתר</a></p>
+                </div>
+                <div class="column">
+                    <p><a href="#" style="text-decoration: none" title="תמיכה ומידע">תמיכה ומידע</a></p>
+                    <p><a href="#" style="text-decoration: none" title="צור קשר">צור קשר</a></p>
+                </div>
+                <div class="column">
+                    <p><a href="http://localhost:5000//sign_up_form.html" style="text-decoration: none"
+                            title="הוספת פרופיל מורה">הוספת פרופיל</a></p>
+                    <p><a href="http://localhost:5000//log_in_form" style="text-decoration: none" title="התחברות">התחבר
+                        </a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

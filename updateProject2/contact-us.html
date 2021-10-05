@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' media='screen' href="./contact-us.css">
+    <script src="./HomePage.js"></script>
+    <script src="./contact-us.js"></script>
+    <title>groupTraining</title>
+</head>
+<body>
+    <nav id="navbar">
+        <ul class="navbar-row">
+            <div class="row-right-side">
+                <li><a id="homePage" href="http://localhost:5000/"><strong>דף הבית</strong></a></li>
+                <li><a href="#"><strong>שירותים</strong></a>
+                    <ul>
+                        <li><a href="http://localhost:5000/personalTraining"><strong>אילוף אישי</strong></a></li>
+                        <li><a href="http://localhost:5000/groupTraining"><strong>אילוף בקבוצות</strong></a></li>
+                        <li><a href="http://localhost:5000/dogBarbers"><strong>ספרים לכלבים</strong></a></li>
+                        <li><a href="http://localhost:5000/aguility"><strong>אג'יליטי</strong></a></li>
+                        <li><a href="http://localhost:5000/dogWalkers"><strong>דוג ווקרים</strong></a></li>
+                        <li><a href="http://localhost:5000/dogSitters"><strong>דוג סיטרים</strong></a></li>
+                        <li><a href="http://localhost:5000/pensions"><strong>פנסיונים</strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><strong>תמיכה ומידע</strong></a>
+                    <ul>
+                        <li><a href="http://localhost:5000/about_us.html"><strong>מי אנחנו</strong></a></li>
+                        <li><a href="http://localhost:5000/disengagement"><strong>הסרת משתמש</strong></a></li>
+                        <li><a href="http://localhost:5000/contact_us"><strong>צור קשר</strong></a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="row-left-side">
+                <li><a href="http://localhost:5000/sign_up_form.html"><strong>הוסף פרופיל</strong></a></li>
+                <li><a href="http://localhost:5000/log_in"><strong>התחבר</strong></a></li>
+            </div>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="page">
+        </div>
+        <div class="form">
+            <h1 id="titleLine">
+                    צור קשר
+            </h1>
+            <p></p>
+            <div id="Customer" class="tabcontent">
+                <form id="contect" action="http://localhost:5000/contact_us" method="POST">
+                    <input type='text' name='full_name' class="searchTerm" placeholder="שם מלא"/>
+                    <input type='email' name='email' class="searchTerm" placeholder="דואר אלקטרוני"/>
+                    <input type='tel' name='phone' class="searchTerm" placeholder="מס' טלפון"/>
+                    <textarea type='text' name ='content' rows="4" cols="50" form="" placeholder="סיבת הפנייה"></textarea>
+                    <div class="button">
+                        <button type="submit">שלח בקשה</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container1">
+            <div class="columns">
+                <div class="column">
+                    <p>©2021 DOGGERS כל הזכויות שמורות לאתר <br>אין להעתיק או לעשות שימוש בכל חלק מהאתר</a></p>
+                </div>
+                <div class="column">
+                    <p><a href="#" style="text-decoration: none" title="תמיכה ומידע">תמיכה ומידע</a></p>
+                    <p><a href="#" style="text-decoration: none" title="צור קשר">צור קשר</a></p>
+                </div>
+                <div class="column">
+                    <p><a href="http://localhost:5000//sign_up_form.html" style="text-decoration: none"
+                            title="הוספת פרופיל מורה">הוספת פרופיל</a></p>
+                    <p><a href="http://localhost:5000//log_in_form" style="text-decoration: none" title="התחברות">התחבר
+                        </a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

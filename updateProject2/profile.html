@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head onclick="">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <script src="profile.js"></script>
+    <title>פרופיל אישי</title>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul class="navbar-row">
+            <div class="row-right-side">
+                <li><a id="homePage" href="HomePage.html"><strong>דף הבית</strong></a></li>
+                <li><a href="#"><strong>שירותים</strong></a>
+                    <ul>
+                        <li><a href="#"><strong>אילוף אישי</strong></a></li>
+                        <li><a href="#"><strong>אילוף בקבוצות</strong></a></li>
+                        <li><a href="#"><strong>ספרים לכלבים</strong></a></li>
+                        <li><a href="#"><strong>אג'יליטי</strong></a></li>
+                        <li><a href="#"><strong>דוג ווקרים</strong></a></li>
+                        <li><a href="#"><strong>דוג סיטרים</strong></a></li>
+                        <li><a href="#"><strong>פנסיונים</strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><strong>תמיכה ומידע</strong></a>
+                    <ul>
+                        <li><a href="#"><strong>מי אנחנו</strong></a></li>
+                        <li><a href="#"><strong>שאלות ותשובות</strong></a></li>
+                        <li><a href="#"><strong>צור קשר</strong></a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="row-left-side">
+                <li><a href="sign_up_form_web_project_g12.html"><strong>הוסף פרופיל</strong></a></li>
+                <li><a href="log_in_form_web_project_g12.html"><strong>התחבר</strong></a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div id="profile" class="content">
+        <h1 id="User_Name"> פרופיל משתמש - נותן שירות </h1>
+        <div class="welcome">
+            <div class="innerWelcome">
+                <img class="profilePic" src="./profile.png" alt="">
+                <div class="about">
+                    <h1>עומר דהן</h1>
+                    <h4>מעביר שיעורי אילוף ביחידים או בקבוצות. <br>
+                        מתמחה בשיטת תגמול. בעל וותק של 4 שנים <br><br>
+                        בן 27, מבאר שבע
+                    </h4>
+                </div>
+            </div>
+            <div id="payment">
+                <button id="messege" onclick="btnClick('send_mess','messege')">שלח הודעה</button>
+                <h2 id="price">90₪ לשעה - בקבוצה</h2>
+                <div id="send_mess">
+                    <!-- Modal content -->
+                    <div class="opinion-content">
+                        <span class="close" onclick="spanClick('send_mess','messege')">&times;</span>
+                        <h1>צור קשר</h1>
+                        <div id="connect">
+                            <form class="form" id="lesson_req">
+                                <input ,="" placeholder="שם מלא" type="text" />
+                                <input ,="" placeholder="דואר אלקטרוני" type="text" />
+                                <input ,="" placeholder="מס' טלפון" type="text" />
+                                <textarea rows="4" cols="50" form="lesson_req" placeholder="סיבת הפנייה"></textarea>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="aboutMe" class="content">
+            <h2>קצת עליי</h2>
+            <p>סטודנט שנה ג' להנדסת תעשייה וניהול.
+                השיעור מועבר פרטנית או בקבוצה קטנה.
+                כלל השיעורים מותאמים לכל כלב ולקצב הפרטי שלו.
+                בעל ניסיון באילוף מזה 4 שנים, בוגר מרכז אופק . בעל תשומת לב וסבלנות רבה
+                בסוף כל שיעור מוסיף תרגילים לתרגול אישי</p>
+        </div>
+
+        <div id="knowledge">
+            <h3>סגנונות</h3>
+            <p>כלבנות טיפולית, כלבי הגנה, כלבי עבודה וגישוש</p>
+        </div>
+
+        <div id="cities">
+            <h3>ערי עיסוק</h3>
+            <p>באר שבע, אשדוד</p>
+        </div>
+
+        <div id="opinion">
+            <h3>חוות דעת</h3>
+            <!-- כאן יהיה פירוט של חוות דעת שהועלו לאתר -->
+            <button id="addOP" onclick="btnClick('opinion_set','addOP')">הוספת חוות דעת</button>
+            <div id="opinion_set" class="opinion">
+                <!-- Modal content -->
+                <div class="opinion-content">
+                    <span class="close" onclick="spanClick('opinion_set','addOP')">&times;</span>
+                    <h1>דרג את עומר</h1>
+                    <div id="request">
+                        <form class="form" id="rate">
+                            <input ,="" placeholder="ציון בין 1-5" type="value" />
+                            <textarea rows="4" cols="50" form="rate" placeholder="התייחסות מילולית"></textarea>
+                            <input ,="" list="browsers" placeholder="סוג השיעור שהועבר" type="text" />
+                            <datalist id="browsers">
+                                <option value="אילוף">
+                                <option value="תספורת כלבים">
+                                <option value="אג'יליטי">
+                                <option value="דוג ווקר">
+                                <option value="דוג סיטר">
+                                <option value="פנסיון">
+                            </datalist>
+                            <input ,="" placeholder="מס' השיעורים/מפגשים" type="value" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <p>©2021 DOGGERS כל הזכויות שמורות לאתר <br>אין להעתיק או לעשות שימוש בכל חלק מהאתר</a></p>
+                </div>
+                <div class="column">
+                    <p><a href="#" style="text-decoration: none" title="תמיכה ומידע">תמיכה ומידע</a></p>
+                    <p><a href="#" style="text-decoration: none" title="צור קשר">צור קשר</a></p>
+                </div>
+                <div class="column">
+                    <p><a href="./sign_up_form_web_project_g12.html" style="text-decoration: none"
+                            title="הוספת פרופיל מורה">הוספת פרופיל</a></p>
+                    <p><a href="./log_in_form_web_project_g12.html" style="text-decoration: none" title="התחברות">התחבר
+                        </a></p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        // Get the modal
+        var opinion = document.getElementById("opinion_set");
+        var messege = document.getElementById("send_mess");
+        // Get the button that opens the modal
+        var btn1 = document.getElementById("addOP");
+        var btn2 = document.getElementById("messege");
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == opinion) {
+                opinion.style.display = "none";
+            }
+            if (event.target == messege) {
+                messege.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

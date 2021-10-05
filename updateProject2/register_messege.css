@@ -1,0 +1,74 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #f6f5f5;
+    color: #145374;
+    font-family: 'Varela_Round', sans-serif;
+    direction: rtl;
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(horevclm-heavy-webfont.ttf);  
+}
+
+.title{
+    display: flex;
+}
+
+#rightDiv {
+    display: block;
+    width: 30%;
+    height: 28em;
+    margin: 44px;
+    padding: 20px;
+    background-color: #9e9b95;
+    text-align: center;
+    background-image: url("jusfilm-Z-M1sKVktGM-unsplash.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+#leftDiv{
+    display: block;
+    height: 17em;
+    margin: 44px;
+    padding: 20px;
+    padding-right: 17px;
+    padding-block-start: 50px;
+    font-size: 150%;
+}
+
+#leftDiv h1{
+    font-size: 300%;
+}
+
+
+.button {
+    display: block;
+    margin: auto;
+    margin-top: 1.2em;
+    width: 8em;
+    height: 2.5em;
+    text-align: center;
+}
+.button a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: solid 1.5px #145374;
+    border-radius: 20px;
+    line-height: 2.4em;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #145374;
+    margin: 0;
+  }
+  .button a:hover {
+    border: solid 2px #ee6f57;
+    color: #ee6f57;
+    font-weight: 600;
+  }

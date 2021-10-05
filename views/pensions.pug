@@ -1,0 +1,30 @@
+extends layout 
+block content 
+    title groupTraining
+    div
+      h3
+        h1 מאלפים מומלצים לעבודה בקבוצות
+      div(class='profile_cont')
+        .profile
+          span
+          div
+            img(class='profile_pic' src='profile.png')
+          div
+            h3
+              a(href='#')
+                span #{username_var}
+            div
+              div
+                span
+                  span 
+                  span 
+              div
+                div
+                  span
+                    span ₪
+                    | #{fee_var}
+                  span לשעה
+          div
+            span ”
+            | #{about_var}
+            span “
